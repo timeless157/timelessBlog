@@ -1,0 +1,35 @@
+server:
+  port: 8989
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/timeless_blog?serverTimeZone=UTC
+    username: root
+    password: root
+  servlet:
+    multipart:
+      max-request-size: 5MB
+      max-file-size: 2MB
+  redis:
+    host: 127.0.0.1
+  mail:
+    host: smtp.qq.com
+    username: 1051346016@qq.com
+    password: fvfxawvplhsybddi
+    default-encoding: utf-8
+#    password: rootroot
+mybatis-plus:
+  configuration:
+    # 日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: delFlag
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      id-type: auto
+oss:
+  accessKey: g0TjFT0lQvwIZTGkKDWYAISltRr-BhEEdd8vPVCZ
+  secretKey: AUqsEtx4PmRgVXSMmNrgg8o96v_50jsxBCnrVNUs
+  bucket: timeless-blog
+  domainName: http://rms5iqmp8.hd-bkt.clouddn.com/

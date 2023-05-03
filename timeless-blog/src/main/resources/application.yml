@@ -1,0 +1,57 @@
+server:
+  port: 8160
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/timeless_blog?serverTimeZone=UTC
+    username: root
+    password: root
+  servlet:
+    multipart:
+      max-request-size: 5MB
+      max-file-size: 2MB
+  redis:
+    host: localhost
+#    password: rootroot
+  profiles:
+    active: dev
+#平台地址，这里用的是qq邮箱，使用其他邮箱请更换
+  mail:
+    host: smtp.qq.com
+    username: 1051346016@qq.com
+    password: fvfxawvplhsybddi
+    default-encoding: utf-8
+
+mybatis-plus:
+  configuration:
+    # 日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: delFlag
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      id-type: auto
+
+oss:
+  accessKey: g0TjFT0lQvwIZTGkKDWYAISltRr-BhEEdd8vPVCZ
+  secretKey: AUqsEtx4PmRgVXSMmNrgg8o96v_50jsxBCnrVNUs
+  bucket: timeless-blog
+  domainName: http://rms5iqmp8.hd-bkt.clouddn.com/
+
+# 日志
+logging:
+  config: classpath:logback-spring.xml
+
+# 日志配置（xml扩展配置）
+logPath: D:/java/code/springBoot/springboot项目/myblog/log
+logName: admin
+logBusinessLevel: debug
+logRootLevel: info
+
+#微信登陆配置
+vx:
+  open:
+    app_id: wxed9954c01bb89b47
+    app_secret: a7482517235173ddb4083788de60b90e
+    redirect_url: http://localhost:8160/api/ucenter/wx/callback
