@@ -37,7 +37,7 @@ public class ChatGptUtils {
                 .url("https://api.openai.com/v1/chat/completions")
                 .post(body)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "Bearer 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") // Replace with your actual API key
+                .addHeader("Authorization", "Bearer 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") // Replace with your actual API key
                 .build();
         Response response = client.newCall(request).execute();
         String responseData = response.body().string();
