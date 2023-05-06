@@ -52,4 +52,15 @@ public class CommentController {
         return commentService.commentList(SystemConstants.TYPE_LINK_COMMENT, null, pageNum, pageSize);
     }
 
+    /**
+     * 自己删除自己的评论
+     * @param id
+     * @return
+     */
+    @DeleteMapping("/deleteOwnComment/{id}")
+    public ResponseResult deleteOwnComment(@PathVariable Long id){
+        commentService.removeById(id);
+        return ResponseResult.okResult();
+    }
+
 }
