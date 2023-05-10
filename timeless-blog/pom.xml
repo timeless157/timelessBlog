@@ -47,7 +47,7 @@
             <version>3.4.1</version>
         </dependency>
 
-<!--        &lt;!&ndash;ES&ndash;&gt;-->
+        <!--        &lt;!&ndash;ES&ndash;&gt;-->
 <!--        <dependency>-->
 <!--            <groupId>org.elasticsearch</groupId>-->
 <!--            <artifactId>elasticsearch</artifactId>-->
