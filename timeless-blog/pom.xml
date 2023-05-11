@@ -42,6 +42,10 @@
             <version>3.4.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.xuxueli</groupId>
+            <artifactId>xxl-job-core</artifactId>
+        </dependency>
 
         <!--        &lt;!&ndash;ES&ndash;&gt;-->
 <!--        <dependency>-->

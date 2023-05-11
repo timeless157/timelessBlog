@@ -63,3 +63,17 @@ minio:
   secretKey: minioadmin
   bucket: timelessbloguserpicture
   urlPrefix: http://localhost:9000/
+
+#xxl
+xxl:
+  job:
+    admin:
+      addresses: http://localhost:8080/xxl-job-admin
+    executor:
+      appname: articleHandler
+      address:
+      ip:
+      port: 8585
+      logpath: D:\\java\\code\\springBoot\\springboot项目\\myblog\\xxl_job_log
+      logretentiondays: 30
+    accessToken: default_token

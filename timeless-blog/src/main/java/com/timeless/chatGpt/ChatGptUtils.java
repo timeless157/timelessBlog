@@ -36,7 +36,7 @@ public class ChatGptUtils {
         HttpPost httpPost = new HttpPost("https://api.openai.com/v1/chat/completions");
         httpPost.setConfig(config);
         httpPost.setHeader("Content-Type", "application/json");
-        httpPost.setHeader("Authorization", "Bearer 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"); // Replace with your actual API key
+        httpPost.setHeader("Authorization", "Bearer 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"); // Replace with your actual API key
         Gson gson = new Gson();
         String json = "{ \"model\": \"gpt-3.5-turbo\", \"messages\": "
                 + "[{\"role\": \"user\", \"content\": "
