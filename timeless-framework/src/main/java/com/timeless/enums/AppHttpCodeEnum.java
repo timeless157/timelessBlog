@@ -31,7 +31,8 @@ public enum AppHttpCodeEnum {
     EMAIL_IS_NOT_EXIST(517, "该邮箱不存在"),
     CODE_IS_EXPIRED(518, "验证码已失效，请重新发送"),
     CODE_ERROR(519, "验证码错误"),
-    CODE_SEND_ERROR(520, "验证码发送错误");
+    CODE_SEND_ERROR(520, "验证码发送错误"),
+    UPLOAD_FAIL(521, "上传图片失败");
     int code;
     String msg;
 

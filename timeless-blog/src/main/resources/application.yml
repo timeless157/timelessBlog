@@ -55,3 +55,11 @@ vx:
     app_id: wxed9954c01bb89b47
     app_secret: a7482517235173ddb4083788de60b90e
     redirect_url: http://localhost:8160/api/ucenter/wx/callback
+
+#minio
+minio:
+  endpoint: http://127.0.0.1:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+  bucket: timelessbloguserpicture
+  urlPrefix: http://localhost:9000/
